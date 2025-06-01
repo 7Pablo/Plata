@@ -1,0 +1,76 @@
+.ham-dropdown {
+    display: none;
+
+    &__button {
+        width: 40px;
+        height: 40px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__content {
+        @include flex($align: start, $gap: 10px);
+        background-color: #fff;
+        margin-top: 25px;
+        border-radius: 12px;
+        padding: 20px 50px 25px 25px;
+        width: 225px;
+    }
+
+    &__item {
+        transition: transform 0.3s ease-out;
+        outline: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        .chakra-menu__item {
+            @include body-font($color: $gray-light, $size: 18px);
+            padding: 8px 0px;
+            background-color: transparent;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &:hover {
+            transform: translateX(6px);
+        }
+
+        &-active {
+            font-weight: 500;
+            color: $orange-primary;
+
+            &:hover {
+                transform: translateX(6px); 
+            }
+        }
+    }
+}
+
+// Responsive smedium 
+@include responsive(smedium) {
+    .ham-dropdown {
+        display: block;
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .ham-dropdown {
+        &__content {
+            width: 90vw;
+        }
+
+        &__item {
+            .chakra-menu__item {
+                font-size: 20px;
+                padding: 10px 0px;
+            }
+        }
+    }
+}

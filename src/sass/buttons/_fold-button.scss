@@ -1,0 +1,33 @@
+.fold-button {
+    display: flex; 
+    align-items: center; 
+    height: 32px;
+    width: 30px;
+    cursor: pointer;
+    transition: width 0.3s ease-out; 
+    overflow: hidden;
+
+    &__icon {
+        flex-shrink: 0; 
+        box-sizing: border-box;
+    }
+
+    &__text {
+        @include body-font($size: 13px, $weight: 500, $color: #fff);
+        margin-left: 12px;
+        white-space: nowrap; 
+    }
+
+    &:hover {
+        width: 120px;
+    }
+
+    @include responsive(smedium) {
+        transition: transform 0.3s ease-out; 
+
+        &:hover {
+            width: 30px;
+            transform: scale(1.3);
+        }
+    }
+}

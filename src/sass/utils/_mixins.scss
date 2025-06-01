@@ -1,0 +1,45 @@
+@mixin body-font($size: 18px, $weight: 400, $color: $gray-light) {
+  font-family: 'Gotham', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: calc($size + 10px);
+}
+
+@mixin title-font($size: 22px, $weight: 700, $color: $gray-dark) {
+  font-family: 'Gotham', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: calc($size + 10px);
+}
+
+@mixin flex($direction: column, $gap: 0px, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin grid($rows: auto auto, $columns: auto auto, $gap: 0px){
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 550px) { @content; }
+  } 
+  @else if $breakpoint == smedium {
+    @media (max-width: 800px) { @content; }
+  } 
+  @else if $breakpoint == medium {
+    @media (max-width: 1200px) { @content; }
+  } 
+  @else if $breakpoint == large {
+    @media (max-width: 1440px) { @content; }
+  }
+}

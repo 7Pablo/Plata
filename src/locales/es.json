@@ -1,0 +1,127 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "contact": "Contacto",
+        "language": "English"
+    },
+
+    "footer": {
+        "contact": "Contáctanos",
+        "address": "Dirección",
+        "time": "Horario de trabajo",
+        "mon_fry": "Lun - Vie",
+        "saturday": "Sábado",
+        "sunday": "Domingo",
+        "links": "Enlaces",
+        "download": "Descargar app",
+        "copyright": "Plata. Todos los derechos reservados.",
+        "geetings1": "Hola,",
+        "message": "Estoy interesado en conocer más sobre Plata. Agradecería cualquier información adicional que puedan compartir",
+        "greetings2": "Saludos cordiales,",
+        "name": "[Tu nombre]",
+        "subject": "Consulta sobre Plata"
+    },
+
+    "home_page": {
+        "title1": "Lleva una sola cosa.",
+        "title2": "Llévalo todo.",
+        "subtitle": "Comienza aquí tu experiencia de pagos y recompensas, pagando en cualquier lugar.",
+        "question": "¿Y si todo lo que necesitas estuviera en tu celular?",
+        "meaning": "Plata es una billetera digital completa que te permite gestionar tus pagos, entradas, seguros y documentos personales desde el celular, de forma rápida, segura y sin complicaciones. Todo en un solo lugar, siempre a tu alcance.",
+        "services_title": "Brindamos los Mejores Servicios",
+        "service_title1": "Pago de servicios",
+        "service_body1": "Agregar y almacenar cuentas de servicios favoritos, facilitando los pagos recurrentes.",
+        "service_title2": "Cartera digital",
+        "service_body2": "Vincula tarjetas de crédito, débito, cuentas bancarias o criptomonedas.",
+        "service_title3": "Documentos",
+        "service_body3": "Guarda documentos como identificaciones, facturas, contratos, recibos, pólizas de seguros y más.",
+        "service_title4": "Soporte técnico",
+        "service_body4": "Ofrece soporte a través de chat en vivo, correo electrónico, línea telefónica y formularios en la app.",
+        "steps_title": "¡Tu billetera digital en solo 3 pasos!",
+        "step_title1": "Paso 1",
+        "step_body1": "Busca Plata en Google Play o App Store y descárgala gratis en segundos.",
+        "step_title2": "Paso 2",
+        "step_body2": "Regístrate ingresando tus datos. Es rápido y estarás listo en solo unos minutos.",
+        "step_title3": "Paso 3",
+        "step_body3": "¡Y listo! Comienza a usar Plata para hacer pagos, guardar documentos y más desde tu celular.",
+        "aly_title": "Por qué Plata es tu aliado",
+        "aly_title1": "¡Paga con Plata!",
+        "aly_body1": "Realiza pagos al instante, de forma rápida y segura, desde tu celular.",
+        "aly_title2": "Guarda tus tickets y comprobantes digitales",
+        "aly_body2": "Olvídate del papel: conserva todos tus boletos y recibos en un solo lugar, siempre accesibles.",
+        "aly_title3": "Conecta tu credencial universitaria o laboral",
+        "aly_body3": "Vincula tus credenciales fácilmente y tenlas siempre a mano para acceder, identificarte o verificar.",
+        "accepted_title": "PLATA es aceptado en:",
+        "accepted_title1": "Grandes empresas",
+        "accepted_body1": "Plata cuenta con convenios a nivel nacional que permiten su uso como forma de pago en una amplia red de empresas. Únete a la comunidad y aprovecha todos sus beneficios.",
+        "accepted_title2": "Emprendimientos y negocios",
+        "accepted_body2": "Conecta tu emprendimiento o negocio a la red de Plata y ofrece a tus clientes una forma de pago segura, moderna y accesible. Ayuda a impulsar la economía digital en tu comunidad.",
+        "review_title": "¿Ya usaste PLATA? ¡Queremos escucharte!",
+        "review_body": "Cuéntanos cómo ha sido tu experiencia con la app. Tu opinión nos ayuda a mejorar y a seguir creando una plataforma que se adapte a ti.",
+        "download_title": "Descarga la app y empieza a usar PLATA hoy",
+        "download_body": "Cuéntanos cómo ha sido tu experiencia con la app. Tu opinión nos ayuda a mejorar y a seguir creando una plataforma que se adapte a ti.",
+        "contact_title": "¿Tienes dudas o necesitas ayuda?",
+        "contact_body": "Visita nuestra página de contacto y con gusto resolveremos tus preguntas.",
+        "faq_title": "Preguntas frecuentes",
+        "faq_body": "¿Tienes dudas sobre cómo funciona Plata? Aquí respondemos las preguntas más comunes para ayudarte a aprovechar al máximo nuestra app.",
+        "questions": {
+            "question1": "¿Qué es Plata?",
+            "answer1": "Plata es una billetera digital que te permite realizar pagos, guardar documentos, gestionar credenciales y mucho más, todo desde tu celular.",
+            "question2": "¿Dónde puedo descargar la app?",
+            "answer2": "Plata está disponible en Google Play y App Store. Solo busca “Plata” y descárgala gratis.",
+            "question3": "¿Qué tipo de documentos puedo guardar en la app?",
+            "answer3": "Puedes almacenar identificaciones, contratos, pólizas de seguros, facturas, boletos y otros documentos importantes.",
+            "question4": "¿Es seguro usar Plata?",
+            "answer4": "Sí. Plata utiliza tecnología de seguridad avanzada para proteger tu información y tus transacciones.",
+            "question5": "¿Qué métodos de pago acepta Plata?",
+            "answer5": "Puedes vincular tarjetas de crédito, débito, cuentas bancarias o incluso criptomonedas.",
+            "question6": "¿Dónde puedo usar Plata como forma de pago?",
+            "answer6": "Plata es aceptada en grandes empresas, comercios, emprendimientos y negocios afiliados a nuestra red a nivel nacional.",
+            "question7": "¿Qué hago si tengo problemas con la app?",
+            "answer7": "Si necesitas ayuda, puedes contactarnos fácilmente desde nuestra página de contacto. ¡Estamos aquí para ayudarte!"
+        }
+    },
+
+    "about": {
+        "title": "Quiénes somos",
+        "body": "En Plata, creemos en un futuro donde la tecnología simplifica la vida financiera de las personas. Somos una empresa enfocada en el desarrollo de soluciones digitales seguras, accesibles y eficientes. Nuestra principal herramienta es la aplicación Plata, una billetera digital que permite realizar pagos, almacenar documentos importantes y gestionar credenciales desde el celular. Creamos Plata con el objetivo de ofrecer una experiencia moderna, práctica y confiable, pensada para acompañarte en tu día a día, estés donde estés.",
+        "mission_title": "Misión",
+        "mission_body": "Facilitar la vida financiera de las personas mediante soluciones digitales simples, seguras y accesibles, centradas en la innovación y la experiencia del usuario.",
+        "vision_title": "Visión",
+        "vision_body": "Ser la billetera digital líder en América Latina, impulsando la transformación digital del manejo de pagos y documentos personales.",
+        "vision": {
+            "vision_text": "Valores",
+            "vision1": "Innovación: Buscamos constantemente mejorar y ofrecer soluciones modernas.",
+            "vision2": "Seguridad: Protegemos la información y transacciones de nuestros usuarios.",
+            "vision3": "Accesibilidad: Creamos herramientas al alcance de todos, sin complicaciones.",
+            "vision4": "Confianza: Construimos relaciones duraderas con nuestros usuarios a través de la transparencia y el buen servicio."
+        },
+        "members_title": "Conoce nuestro equipo",
+        "memebrs_body": "Detrás de Plata hay un equipo comprometido con la innovación, la tecnología y el servicio. Juntos trabajamos para crear una experiencia digital segura, práctica y pensada para ti.",
+        "roles": {
+            "role1": "Presidente",
+            "role2": "Directora Ejecutiva (CEO)",
+            "role3": "Director de Marketing (CMO)"
+        }
+    },
+
+    "contact": {
+        "title": "Contáctanos",
+        "body1": "¿Tienes preguntas, sugerencias o necesitas ayuda?",
+        "body2": "Estamos aquí para escucharte.",
+        "body3": "Escríbenos y te responderemos lo antes posible.",
+        "phone": "Teléfono",
+        "email": "Correo",
+        "address": "Dirección",
+        "time": "Horario de trabajo"
+    },
+
+    "button": {
+        "download": "¡Descárgalo ya!",
+        "app_store": "Descargalo en la",
+        "google_play": "Descargalo en",
+        "review": "Ir a la encuesta",
+        "contact": "Contáctanos"
+    }
+}

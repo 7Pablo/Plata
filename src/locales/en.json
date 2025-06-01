@@ -1,0 +1,127 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About us",
+    "contact": "Contact",
+    "language": "Español"
+  },
+
+  "footer": {
+    "contact": "Contact Us",
+    "address": "Address",
+    "time": "Working Hours",
+    "mon_fry": "Mon - Fri",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "links": "Links",
+    "download": "Download App",
+    "copyright": "Plata. All rights reserved.",
+    "greetings1": "Hello,",
+    "message": "I’m interested in learning more about Plata. I would appreciate any additional information you can share.",
+    "greetings2": "Kind regards,",
+    "name": "[Your name]",
+    "subject": "Inquiry about Plata"
+  },
+
+  "home_page": {
+    "title1": "Carry just one thing.",
+    "title2": "Carry it all.",
+    "subtitle": "Start your payment and rewards experience here, pay anywhere.",
+    "question": "What if everything you need was on your phone?",
+    "meaning": "Plata is a complete digital wallet that allows you to manage your payments, tickets, insurance, and personal documents from your phone quickly, securely, and hassle-free. Everything in one place, always within reach.",
+    "services_title": "We Provide the Best Services",
+    "service_title1": "Service Payments",
+    "service_body1": "Add and store favorite service accounts, making recurring payments easier.",
+    "service_title2": "Digital Wallet",
+    "service_body2": "Link credit, debit cards, bank accounts, or cryptocurrencies.",
+    "service_title3": "Documents",
+    "service_body3": "Store documents like IDs, invoices, contracts, receipts, insurance policies, and more.",
+    "service_title4": "Tech Support",
+    "service_body4": "Provides support via live chat, email, phone line, and in-app forms.",
+    "steps_title": "Your Digital Wallet in Just 3 Steps!",
+    "step_title1": "Step 1",
+    "step_body1": "Search for Plata on Google Play or App Store and download it for free in seconds.",
+    "step_title2": "Step 2",
+    "step_body2": "Register by entering your information. It's quick and you'll be ready in just minutes.",
+    "step_title3": "Step 3",
+    "step_body3": "You're all set! Start using Plata to make payments, store documents, and more from your phone.",
+    "aly_title": "Why Plata is Your Ally",
+    "aly_title1": "Pay with Plata!",
+    "aly_body1": "Make instant payments quickly and securely from your phone.",
+    "aly_title2": "Store Your Tickets and Digital Receipts",
+    "aly_body2": "Forget paper: keep all your tickets and receipts in one place, always accessible.",
+    "aly_title3": "Connect Your Student or Work ID",
+    "aly_body3": "Easily link your credentials and always have them at hand to access, identify, or verify.",
+    "accepted_title": "PLATA is accepted at:",
+    "accepted_title1": "Large Companies",
+    "accepted_body1": "Plata has national agreements that allow it to be used as a payment method across a wide network of companies. Join the community and enjoy all the benefits.",
+    "accepted_title2": "Entrepreneurs and Businesses",
+    "accepted_body2": "Connect your business to the Plata network and offer your customers a safe, modern, and accessible payment method. Help drive the digital economy in your community.",
+    "review_title": "Already used PLATA? We'd love to hear from you!",
+    "review_body": "Tell us about your experience with the app. Your feedback helps us improve and continue building a platform tailored to you.",
+    "download_title": "Download the App and Start Using PLATA Today",
+    "download_body": "Tell us about your experience with the app. Your feedback helps us improve and continue building a platform tailored to you.",
+    "contact_title": "Got Questions or Need Help?",
+    "contact_body": "Visit our contact page and we'll gladly answer your questions.",
+    "faq_title": "Frequently Asked Questions",
+    "faq_body": "Have questions about how Plata works? Here are the most common questions to help you get the most out of our app.",
+    "questions": {
+      "question1": "What is Plata?",
+      "answer1": "Plata is a digital wallet that allows you to make payments, store documents, manage credentials, and much more — all from your phone.",
+      "question2": "Where can I download the app?",
+      "answer2": "Plata is available on Google Play and the App Store. Just search for 'Plata' and download it for free.",
+      "question3": "What type of documents can I store in the app?",
+      "answer3": "You can store IDs, contracts, insurance policies, invoices, tickets, and other important documents.",
+      "question4": "Is Plata safe to use?",
+      "answer4": "Yes. Plata uses advanced security technology to protect your information and transactions.",
+      "question5": "What payment methods does Plata accept?",
+      "answer5": "You can link credit cards, debit cards, bank accounts, or even cryptocurrencies.",
+      "question6": "Where can I use Plata as a payment method?",
+      "answer6": "Plata is accepted at large companies, stores, businesses, and ventures affiliated with our national network.",
+      "question7": "What if I have problems with the app?",
+      "answer7": "If you need help, you can easily contact us through our contact page. We're here to help!"
+    }
+  },
+
+  "about": {
+    "title": "About Us",
+    "body": "At Plata, we believe in a future where technology simplifies people's financial lives. We are a company focused on developing secure, accessible, and efficient digital solutions. Our main tool is the Plata app, a digital wallet that lets you make payments, store important documents, and manage credentials from your phone. We created Plata with the goal of offering a modern, practical, and reliable experience designed to support you daily, wherever you are.",
+    "mission_title": "Mission",
+    "mission_body": "To simplify people's financial lives through simple, secure, and accessible digital solutions focused on innovation and user experience.",
+    "vision_title": "Vision",
+    "vision_body": "To be the leading digital wallet in Latin America, driving the digital transformation of payments and personal document management.",
+    "vision": {
+      "vision_text": "Values",
+      "vision1": "Innovation: We constantly seek to improve and offer modern solutions.",
+      "vision2": "Security: We protect our users' information and transactions.",
+      "vision3": "Accessibility: We create tools that are easy to use and available to everyone.",
+      "vision4": "Trust: We build long-term relationships with our users through transparency and great service."
+    },
+    "members_title": "Meet Our Team",
+    "memebrs_body": "Behind Plata is a team committed to innovation, technology, and service. We work together to create a secure, practical digital experience designed for you.",
+    "roles": {
+      "role1": "President",
+      "role2": "Chief Executive Officer (CEO)",
+      "role3": "Chief Marketing Officer (CMO)"
+    }
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "body1": "Have questions, suggestions, or need help?",
+    "body2": "We’re here to listen.",
+    "body3": "Write to us and we’ll get back to you as soon as possible.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "time": "Working Hours"
+  },
+
+  "button": {
+    "download": "Download now!",
+    "app_store": "Get it on the",
+    "google_play": "Get it on",
+    "review": "Go to the survey",
+    "contact": "Contact Us"
+  }
+}
