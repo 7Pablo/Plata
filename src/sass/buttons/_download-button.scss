@@ -1,0 +1,58 @@
+.download-button {
+    @include flex($direction: row, $gap: 15px);
+    background-color: $green-primary;
+    border-radius: 100px;
+    padding: 18px 30px; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+    transition: all .2s;
+    min-width: 275px;
+
+    &:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 15px 8px rgba(0, 0, 0, 0.2); 
+    }
+    
+    &__text {
+        @include flex($align: start);
+
+        p {
+            @include body-font($size: 14px, $weight: 400, $color: #fff);
+            padding-left: 3px;
+            line-height: 20px;
+        }
+
+        h3 {
+            @include body-font($size: 26px, $weight: 400, $color: #fff);
+            line-height: 30px;
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .download-button {
+        min-width: 225px;
+        padding: 8px 30px; 
+        gap: 10px;
+
+        &__text {
+            p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            h3 {
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+
+        &__image {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

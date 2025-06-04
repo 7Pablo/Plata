@@ -1,18 +1,20 @@
 // Footer.js (Server component)
 
 import { getCurrentYear } from "@/utils/date";
-import { getTranslations } from "locales/translations";
+import { getTranslations } from "@/locales/translations";
 import Image from "next/image";
 import FooterContact from "./FooterContact";
 import FoldButton from "./buttons/FoldButton";
 import FooterItems from "./FooterItems";
 
-export default async function Footer(lang) {
+export default async function Footer({lang}) {
+
+    // Year
+    const currentYear = getCurrentYear();
 
     // Translations
     const locale = lang || 'en';
     const trans = await getTranslations(locale);
-    const currentYear = getCurrentYear();
 
     // Footer items
     const footItems = [

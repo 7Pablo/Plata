@@ -63,10 +63,13 @@ a:focus {
 @import './buttons/button';
 @import './buttons/ham-dropdown';
 @import './buttons/fold-button';
+@import './buttons/download-button';
 
 // Cards
+@import './cards/service-card';
 
 // Pages 
+@import './pages/home-page';
 
 body {
 	background-color: $background-main; 
