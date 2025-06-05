@@ -4,7 +4,7 @@
     margin: auto 50px 0;
     
     &__content {
-        background-color: $blue-secondary;
+        background: linear-gradient(to bottom, $purple-primary, $blue-primary);
         width: 100%;
         max-width: 1440px;
         border-radius: 20px 20px 0 0;

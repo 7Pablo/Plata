@@ -68,7 +68,7 @@ export default async function HomePage({params}) {
                   icon="/icons/pay.svg"
                   title={trans.home_page.service_title1}
                   body={trans.home_page.service_body1}
-                  color="#5CBB63"
+                  color="#272d62"
                 />
                 <ServiceCard
                   icon="/icons/wallet.svg"
@@ -77,7 +77,7 @@ export default async function HomePage({params}) {
                   color="#57429B"
                 />
                 <ServiceCard
-                  icon="/icons/documents.svg"
+                  icon="/icons/document.svg"
                   title={trans.home_page.service_title3}
                   body={trans.home_page.service_body3}
                   color="#F27C2E"

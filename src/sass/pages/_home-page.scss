@@ -24,22 +24,23 @@
 
     // Meaning 
     &__meaning {
-        margin: 275px auto 80px;
-        max-width: 1440px;
+        margin: 300px auto 80px;
+        padding: 0 50px;
+        max-width: 1540px;
         width: 100%;
         position: relative;
 
         &--content {
             @include flex($direction: row, $justify: space-between);
-            background-color: $blue-primary;
+            background: linear-gradient(to bottom, $blue-primary, $purple-primary);
             border-radius: 40px;
-            padding: 50px 50px 0;
-            min-height: 600px;
+            padding: 70px 50px 0;
+            min-height: 650px;
         }
 
         &--screen, &--screen-small {
             position: absolute;
-            top: -225px;
+            top: -265px;
             left: 50%;
             transform: translateX(-50%);
 
@@ -67,8 +68,25 @@
 
     // Services
     &__services {
+        @include flex($gap: 120px);
+        max-width: 1540px;
+        padding: 50px 50px 80px;
+        width: 100%;
+
+        > h2 {
+            @include title-font($size: 50px, $weight: 500, $color: $blue-secondary);
+            text-align: center;
+        }
+
+        span {
+            color: $orange-primary;
+        }
+
         &--cards {
-            @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)));
+            @include grid($columns: repeat(auto-fit, minmax(300px, 1fr)), $gap: 20px);
+            width: 100%;
+            justify-items: center;
+            margin: 0 auto;
         }
     }
 }
@@ -77,14 +95,20 @@
 @include responsive(large) {
     .home-page {
         &__meaning {
-            padding: 0 50px;
-
             h2 {
                 max-width: 25vw;
             }
 
             p {
                 max-width: 25vw;
+            }
+        }
+
+        &__services {
+            &--cards {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 80px;
+                max-width: 750px;
             }
         }
     }
@@ -94,21 +118,21 @@
 @include responsive(medium) {
     .home-page {
         &__top {
-            padding: 90px 40px 50px;
+            padding: 50px 40px 50px;
         }
 
         &__meaning {
-            margin: 175px auto 80px;
+            margin: 225px auto 80px;
             padding: 0 40px;
 
             &--content {
                 @include flex($gap: 40px);
-                padding: 475px 50px 60px;
+                padding: 500px 50px 60px;
                 min-height: none;
             }
 
             &--screen {
-                top: -150px;
+                top: -200px;
 
                 img {
                     width: 700px;
@@ -118,6 +142,10 @@
             h2, p {
                 max-width: none;
             }
+        }
+
+        &__services {
+            padding: 40px 40px 80px;
         }
     }
 }
@@ -143,14 +171,15 @@
         }
 
         &__meaning {
+            margin: 150px auto 50px;
 
             &--content {
                 gap: 30px;
-                padding: 300px 40px 60px;
+                padding: 335px 40px 60px;
             }
 
             &--screen {
-                top: -115px;
+                top: -135px;
 
                 img {
                     width: 475px;
@@ -163,6 +192,20 @@
 
             p {
                 font-size: 22px;
+            }
+        }
+
+        &__services {
+            gap: 80px;
+
+            > h2 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            &--cards {
+                grid-template-columns: 1fr;
+                row-gap: 100px;
             }
         }
     }
@@ -188,12 +231,13 @@
         }
 
         &__meaning {
-            margin: 150px auto 80px;
+            margin: 175px auto 40px;
             padding: 0 30px;
 
             &--content {
-                padding: 300px 30px 60px;
+                padding: 265px 30px 40px;
                 border-radius: 30px;
+                min-height: 450px;
             }
 
             &--screen {
@@ -201,7 +245,7 @@
                 
                 &-small {
                     display: block;
-                    top: -115px;
+                    top: -150px;
 
                     img {
                         width: 325px;
@@ -216,6 +260,19 @@
 
             p {
                 font-size: 18px;
+            }
+        }
+
+        &__services {
+            padding: 40px 30px 80px;
+
+            > h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            &--cards {
+                row-gap: 110px;
             }
         }
     }

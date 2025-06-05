@@ -1,0 +1,72 @@
+.service-card {
+    &__content {
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+        height: 100%;
+        max-height: 210px;
+        width: 290px;
+        padding: 40px 30px 30px 30px;
+    }
+
+    &__icon {
+        @include flex();
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        height: 70px;
+        width: 70px;
+        border-radius: 10px;
+    }
+
+    &__text {
+        @include flex($align: start, $gap: 10px);
+
+        h3 {
+            @include title-font($size: 22px, $weight: 500, $color: $blue-secondary);
+        }
+
+        p {
+            @include body-font($size: 16px, $color: $gray-dark); 
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(smedium) {
+    .service-card {
+        &__content {
+            padding: 60px 25px 30px;
+            height: fit-content;
+            max-height: none;
+        }
+
+        &__text {
+            gap: 5px;
+        }
+
+        &__icon {
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 80px;
+            width: 80px;
+            
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .service-card {
+        @include flex();
+
+        &__content {
+            max-width: 90%;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .button {
     @include body-font($size: 16px, $weight: 500, $color: #fff);
-    background-color: $orange-primary;
+    background: linear-gradient(to bottom, $orange-primary, $red-primary);
     cursor: pointer;
     border: none;
     border-radius: 100px;

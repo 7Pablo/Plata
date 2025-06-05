@@ -12,12 +12,14 @@ export default function ServiceCard({ icon, title, body, color}) {
                     <Image 
                         src={icon}
                         alt="Service icon"
-                        height={50}
-                        width={50}
+                        height={45}
+                        width={45}
                     />
                 </div>
-                <h3>{title}</h3>
-                <p>{body}</p>
+                <div className="service-card__text">
+                    <h3>{title}</h3>
+                    <p>{body}</p>
+                </div>
             </div>
         </div>
     );
