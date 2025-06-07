@@ -4,6 +4,8 @@ import Image from "next/image";
 import { getTranslations } from "@/locales/translations";
 import DonwloadButton from "@/components/buttons/DonwloadButton";
 import ServiceCard from "@/components/cards/serviceCard";
+import StepCard from "@/components/cards/StepCard";
+import AcceptCard from "@/components/cards/AcceptCard";
 
 // HomePage
 export default async function HomePage({params}) {
@@ -92,10 +94,102 @@ export default async function HomePage({params}) {
             </div>
 
             {/* Steps */}
+            <div className="home-page__steps">
+              <Image
+                src="/images/pay.webp"
+                alt="Steps section background"
+                fill
+                style={{ objectFit: 'cover', objectPosition: '50% 70%' }}
+              />
+              <div className="home-page__steps--overlay">
+                <h2>{trans.home_page.steps_title}</h2>
+                <div className="home-page__steps--cards">
+                  <StepCard
+                    icon="/icons/download.svg"
+                    title={trans.home_page.step_title1}
+                    body={trans.home_page.step_body1}
+                    color="#F27C2E"
+                  />
+                  <div className="home-page__steps--down">
+                    <Image
+                        src="/icons/arrow.svg"
+                        alt="Step icon"
+                        height={150}
+                        width={150}
+                    />
+                  </div>
+                  <StepCard
+                    icon="/icons/registration.svg"
+                    title={trans.home_page.step_title2}
+                    body={trans.home_page.step_body2}
+                    color="#EB383D"
+                  />
+                  <div className="home-page__steps--up">
+                    <Image
+                        src="/icons/arrow.svg"
+                        alt="Step icon"
+                        height={150}
+                        width={150}
+                    />
+                  </div>
+                  <StepCard
+                    icon="/icons/begin.svg"
+                    title={trans.home_page.step_title3}
+                    body={trans.home_page.step_body2}
+                    color="#57429B"
+                  />
+                </div>
+              </div>
+            </div>
 
             {/* Ally */}
+            <div className="home-page__ally">
+              <div className="home-page__ally--content">
+                <div className="home-page__ally--video">
+                  <iframe 
+                    width="360" 
+                    height="640" 
+                    src="https://www.youtube.com/embed/KRntP-q_R9s?si=ncLr3uv9cunBRwsa" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="home-page__ally--right">
+                  <h2>{trans.home_page.ally_title}</h2>
+                  <div className="home-page__ally--card">
+                    <h3>{trans.home_page.ally_title1}</h3>
+                    <p>{trans.home_page.ally_body1}</p>
+                  </div>
+                  <div className="home-page__ally--card">
+                    <h3>{trans.home_page.ally_title2}</h3>
+                    <p>{trans.home_page.ally_body2}</p>
+                  </div>
+                  <div className="home-page__ally--card">
+                    <h3>{trans.home_page.ally_title3}</h3>
+                    <p>{trans.home_page.ally_body3}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Acceptance */}
+            <div className="home-page__acceptance">
+              <h2>{trans.home_page.accepted_title}</h2>
+              <div className="home-page__acceptance--cards">
+                <AcceptCard
+                  image="/images/company.webp" 
+                  title={trans.home_page.accepted_title1}
+                  body={trans.home_page.accepted_body1}
+                />
+                <AcceptCard
+                  image="/images/business.webp" 
+                  title={trans.home_page.accepted_title2}
+                  body={trans.home_page.accepted_body2}
+                />
+              </div>
+            </div>
 
             {/* Review */}
 

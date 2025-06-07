@@ -89,6 +89,106 @@
             margin: 0 auto;
         }
     }
+
+    // Steps
+    &__steps {
+        position: relative;
+        width: 100%;
+        min-height: fit-content; 
+        height: auto; 
+
+        &--overlay {
+            @include flex($justify: start, $gap: 100px);
+            padding: 100px 50px;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: fit-content;
+            height: auto; 
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+
+            h2 {
+                @include title-font($size: 50px, $weight: 500, $color: #fff);
+                text-align: center;
+                text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+                max-width: 850px;
+            }
+        }
+
+        &--cards {
+            @include flex($direction: row, $gap: 15px);
+        }
+
+        &--up {
+            transform: scaleY(-1);
+        }
+    }
+
+    // Ally
+    &__ally {
+        padding: 0 50px;
+        max-width: 1540px;
+        width: 100%;
+        position: relative;
+        margin: 100px 0;
+
+        &--content {
+            @include flex($direction: row, $gap: 80px);
+            background: linear-gradient(to bottom, $orange-primary, $red-primary);
+            border-radius: 40px;
+            padding: 70px 50px;
+        }
+
+        &--video {
+            padding: 20px;
+            background: linear-gradient(to top, $orange-primary, $red-primary);
+            border-radius: 20px;
+        }
+
+        &--right {
+            @include flex($gap: 30px);
+
+            h2 {
+                @include title-font($size: 40px, $weight: 500, $color: #fff);
+                width: 100%;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            h3 {
+                @include title-font($size: 26px, $weight: 500, $color: $blue-secondary);
+                line-height: 32px;
+            }
+
+            p {
+                @include body-font($size: 16px, $color: $gray-light); 
+            }
+        }
+
+        &--card {
+            @include flex($align: start, $gap: 10px);
+            width: 100%;
+            max-width: 700px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+        }
+    }
+
+    // Acceptance
+    &__acceptance {
+        width: 100%;
+        max-width: 900px;
+        margin-bottom: 100px;
+
+        &--cards {
+            @include flex($direction: row, $justify: space-between);
+            
+        }
+    }
+    
 }
 
 // Responsive large
@@ -146,6 +246,48 @@
 
         &__services {
             padding: 40px 40px 80px;
+
+            h2 {
+                max-width: 800px;
+            }
+        }
+
+        &__steps {
+            &--overlay {
+                padding: 100px 40px;
+            }
+
+            &--cards {
+                @include flex($gap: 80px);
+            }
+
+            &--up {
+                transform: rotate(90deg);
+            }
+
+            &--down {
+                transform: rotate(90deg) scaleY(-1);
+            }
+        }
+
+        &__ally {
+            padding: 0 40px;
+            margin: 80px 0;
+            max-width: 950px;
+
+            &--content {
+                @include flex($gap: 50px);
+                padding: 70px 40px;
+            }
+
+            &--right {
+                gap: 35px;
+
+                h2 {
+                    margin-bottom: 0;
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 }
@@ -201,11 +343,38 @@
             > h2 {
                 font-size: 40px;
                 line-height: 50px;
+                max-width: 600px;
             }
 
             &--cards {
                 grid-template-columns: 1fr;
                 row-gap: 100px;
+            }
+        }
+
+        &__steps {
+            &--overlay {
+                gap: 80px; 
+
+                > h2 {
+                    font-size: 40px;
+                    max-width: 500px;
+                }
+            }
+        }
+
+        &__ally {
+            &--content {
+                gap: 60px;
+                padding: 40px;
+            }
+
+            &--right {
+                h2 {
+                    font-size: 35px;
+                    line-height: 40px;
+
+                }
             }
         }
     }
@@ -273,6 +442,54 @@
 
             &--cards {
                 row-gap: 110px;
+            }
+        }
+
+        &__steps {
+            &--overlay {
+                gap: 60px; 
+                padding: 80px 30px;
+
+                > h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        &__ally {
+            padding: 0 30px;
+
+            &--content {
+                gap: 40px;
+            }
+
+            &--video {
+                padding: 15px;
+
+                iframe {
+                    width: 220px;
+                    height: 390px;
+                }
+            }
+
+            &--right {
+                gap: 25px;
+
+                h2 {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+            }
+
+            &--card {
+                padding: 22px;
+                gap: 20px;
+
+                h3 {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
             }
         }
     }

@@ -540,6 +540,7 @@ a:focus {
   max-height: 210px;
   width: 290px;
   padding: 40px 30px 30px 30px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
 }
 .service-card__icon {
   display: flex;
@@ -609,6 +610,60 @@ a:focus {
     max-width: 90%;
   }
 }
+.step-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: start;
+  background-color: #fff;
+  border-radius: 20px;
+  max-width: 250px;
+  min-height: 330px;
+  padding: 30px 20px;
+}
+.step-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.step-card__text h3 {
+  font-family: "Gotham", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #192032;
+  line-height: 38px;
+}
+.step-card__text p {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #535557;
+  line-height: 26px;
+}
+
+@media (max-width: 1200px) {
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: fit-content;
+  }
+}
+.accept-card {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -726,6 +781,126 @@ a:focus {
   justify-items: center;
   margin: 0 auto;
 }
+.home-page__steps {
+  position: relative;
+  width: 100%;
+  min-height: fit-content;
+  height: auto;
+}
+.home-page__steps--overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: start;
+  padding: 100px 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: fit-content;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.home-page__steps--overlay h2 {
+  font-family: "Gotham", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+  max-width: 850px;
+}
+.home-page__steps--cards {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.home-page__steps--up {
+  transform: scaleY(-1);
+}
+.home-page__ally {
+  padding: 0 50px;
+  max-width: 1540px;
+  width: 100%;
+  position: relative;
+  margin: 100px 0;
+}
+.home-page__ally--content {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #e3751f, #e42c32);
+  border-radius: 40px;
+  padding: 70px 50px;
+}
+.home-page__ally--video {
+  padding: 20px;
+  background: linear-gradient(to top, #e3751f, #e42c32);
+  border-radius: 20px;
+}
+.home-page__ally--right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.home-page__ally--right h2 {
+  font-family: "Gotham", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.home-page__ally--right h3 {
+  font-family: "Gotham", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #192032;
+  line-height: 36px;
+  line-height: 32px;
+}
+.home-page__ally--right p {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #737375;
+  line-height: 26px;
+}
+.home-page__ally--card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+.home-page__acceptance {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 100px;
+}
+.home-page__acceptance--cards {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
 
 @media (max-width: 1440px) {
   .home-page__meaning h2 {
@@ -768,6 +943,45 @@ a:focus {
   }
   .home-page__services {
     padding: 40px 40px 80px;
+  }
+  .home-page__services h2 {
+    max-width: 800px;
+  }
+  .home-page__steps--overlay {
+    padding: 100px 40px;
+  }
+  .home-page__steps--cards {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page__steps--up {
+    transform: rotate(90deg);
+  }
+  .home-page__steps--down {
+    transform: rotate(90deg) scaleY(-1);
+  }
+  .home-page__ally {
+    padding: 0 40px;
+    margin: 80px 0;
+    max-width: 950px;
+  }
+  .home-page__ally--content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 40px;
+  }
+  .home-page__ally--right {
+    gap: 35px;
+  }
+  .home-page__ally--right h2 {
+    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
@@ -813,10 +1027,26 @@ a:focus {
   .home-page__services > h2 {
     font-size: 40px;
     line-height: 50px;
+    max-width: 600px;
   }
   .home-page__services--cards {
     grid-template-columns: 1fr;
     row-gap: 100px;
+  }
+  .home-page__steps--overlay {
+    gap: 80px;
+  }
+  .home-page__steps--overlay > h2 {
+    font-size: 40px;
+    max-width: 500px;
+  }
+  .home-page__ally--content {
+    gap: 60px;
+    padding: 40px;
+  }
+  .home-page__ally--right h2 {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media (max-width: 550px) {
@@ -868,6 +1098,42 @@ a:focus {
   }
   .home-page__services--cards {
     row-gap: 110px;
+  }
+  .home-page__steps--overlay {
+    gap: 60px;
+    padding: 80px 30px;
+  }
+  .home-page__steps--overlay > h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .home-page__ally {
+    padding: 0 30px;
+  }
+  .home-page__ally--content {
+    gap: 40px;
+  }
+  .home-page__ally--video {
+    padding: 15px;
+  }
+  .home-page__ally--video iframe {
+    width: 220px;
+    height: 390px;
+  }
+  .home-page__ally--right {
+    gap: 25px;
+  }
+  .home-page__ally--right h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .home-page__ally--card {
+    padding: 22px;
+    gap: 20px;
+  }
+  .home-page__ally--card h3 {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 body {

@@ -1,0 +1,29 @@
+.step-card {
+    @include flex($justify: start, $gap: 30px);
+    background-color: #fff;
+    border-radius: 20px; 
+    max-width: 250px;
+    min-height: 330px;
+    padding: 30px 20px;
+
+    &__text {
+        @include flex($gap: 15px);
+        text-align: center;
+
+        h3 {
+            @include title-font($size: 28px, $weight: 500, $color: $blue-secondary);
+        }
+
+        p {
+            @include body-font($size: 16px, $color: $gray-dark); 
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .step-card {
+        @include flex($gap: 30px);
+        min-height: fit-content;
+    }
+}
