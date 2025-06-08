@@ -53,7 +53,8 @@
         "ally_body2": "Olvídate del papel: conserva todos tus boletos y recibos en un solo lugar, siempre accesibles.",
         "ally_title3": "Conecta tu credencial universitaria o laboral",
         "ally_body3": "Vincula tus credenciales fácilmente y tenlas siempre a mano para acceder, identificarte o verificar.",
-        "accepted_title": "PLATA es aceptado en:",
+        "accepted_title_top1": "PLATA",
+        "accepted_title_top2": "es aceptado en:",
         "accepted_title1": "Grandes empresas",
         "accepted_body1": "Plata cuenta con convenios a nivel nacional que permiten su uso como forma de pago en una amplia red de empresas. Únete a la comunidad y aprovecha todos sus beneficios.",
         "accepted_title2": "Emprendimientos y negocios",
@@ -64,8 +65,8 @@
         "download_body": "Cuéntanos cómo ha sido tu experiencia con la app. Tu opinión nos ayuda a mejorar y a seguir creando una plataforma que se adapte a ti.",
         "contact_title": "¿Tienes dudas o necesitas ayuda?",
         "contact_body": "Visita nuestra página de contacto y con gusto resolveremos tus preguntas.",
-        "faq_title": "Preguntas frecuentes",
-        "faq_body": "¿Tienes dudas sobre cómo funciona Plata? Aquí respondemos las preguntas más comunes para ayudarte a aprovechar al máximo nuestra app.",
+        "faq_title1": "Preguntas",
+        "faq_title2": "frecuentes",
         "questions": {
             "question1": "¿Qué es Plata?",
             "answer1": "Plata es una billetera digital que te permite realizar pagos, guardar documentos, gestionar credenciales y mucho más, todo desde tu celular.",
@@ -85,7 +86,8 @@
     },
 
     "about": {
-        "title": "Quiénes somos",
+        "title1": "Quiénes",
+        "title2": "somos",
         "body": "En Plata, creemos en un futuro donde la tecnología simplifica la vida financiera de las personas. Somos una empresa enfocada en el desarrollo de soluciones digitales seguras, accesibles y eficientes. Nuestra principal herramienta es la aplicación Plata, una billetera digital que permite realizar pagos, almacenar documentos importantes y gestionar credenciales desde el celular. Creamos Plata con el objetivo de ofrecer una experiencia moderna, práctica y confiable, pensada para acompañarte en tu día a día, estés donde estés.",
         "mission_title": "Misión",
         "mission_body": "Facilitar la vida financiera de las personas mediante soluciones digitales simples, seguras y accesibles, centradas en la innovación y la experiencia del usuario.",

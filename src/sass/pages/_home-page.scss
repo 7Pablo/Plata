@@ -179,16 +179,150 @@
 
     // Acceptance
     &__acceptance {
+        @include flex($gap: 80px);
         width: 100%;
-        max-width: 900px;
-        margin-bottom: 100px;
+        max-width: 1100px;
+        padding: 30px 50px 65px;
+
+        h2 {
+            @include title-font($size: 50px, $weight: 500, $color: $blue-secondary);
+            text-align: center;
+             
+            span {
+                color: $orange-primary;
+            }
+        }
 
         &--cards {
             @include flex($direction: row, $justify: space-between);
-            
+            width: 100%;
         }
     }
-    
+
+    // Review
+    &__review {
+        padding: 0 50px;
+        max-width: 1540px;
+        width: 100%;
+        position: relative;
+        margin: 65px 0;
+
+        &--content {
+            @include flex($direction: row);
+            background: linear-gradient(to bottom, $red-primary, $purple-primary);
+            border-radius: 40px;
+            padding: 70px 50px;
+        }
+
+        &--image {
+            @include flex();
+            flex: 0.8;
+        }
+
+        &--right {
+            @include flex($align: start, $gap: 40px);
+            flex: 1;
+        }
+
+        &--text {
+            @include flex($align: start, $gap: 20px);
+            
+            h2 {
+                @include title-font($size: 40px, $weight: 500, $color: #fff);
+                width: 100%;
+                text-align: left;
+            }
+
+            p {
+                @include body-font($size: 20px, $color: #fff); 
+            }
+        }
+    }
+
+    // Download
+    &__download {
+        @include flex($align: start, $gap: 30px);
+        position: relative;
+        padding: 65px 50px;
+        margin-right: 150px;
+        
+        &--top, &--bottom {
+            @include flex($align: start, $gap: 40px);
+            background-color: #fff;
+            width: 100%;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); 
+        }
+ 
+        &--top {
+            .home-page__download-buttons {
+                justify-content: start;
+                gap: 30px;
+
+                .download-button {
+                    padding: 12px 30px; 
+                    min-width: 200px;
+
+                    &__text {
+                        p {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--text {
+            @include flex($align: start, $gap: 30px);
+            max-width: 500px;
+            margin-right: 200px;
+
+            h3 {
+                @include title-font($size: 26px, $weight: 500, $color: $blue-secondary);
+                line-height: 32px;
+            }
+
+            p {
+                @include body-font($size: 16px, $color: $gray-light); 
+            }
+        }
+
+        &--screen {
+            position: absolute;
+            right: -150px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    // Faq
+    &__faq {
+        @include flex($gap: 60px);
+        padding: 0 50px;
+        max-width: 1200px;
+        margin: 65px 0 80px;
+        width: 100%;
+
+        h2 {
+            @include title-font($size: 50px, $weight: 500, $color: $blue-secondary);
+            text-align: center;
+             
+            span {
+                color: $orange-primary;
+            }
+        }
+
+        &--items {
+            width: 100%;
+        }
+    }
 }
 
 // Responsive large
@@ -289,6 +423,93 @@
                 }
             }
         }
+
+        &__acceptance {
+            @include flex($gap: 60px);
+            padding: 30px 40px 55px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            &--cards {
+                @include flex($gap: 60px);
+            }
+        }
+
+        &__review {
+            padding: 0 40px;
+            margin: 55px 0;
+            gap: 10px;
+
+            &--image {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            &--text {
+                gap: 25px;
+            }
+        }
+
+        &__download {
+            @include flex($gap: 30px);
+            padding: 250px 40px 55px;
+            margin-top: 55px;
+            margin-right: 0;
+
+            &--top {
+                padding: 400px 40px 40px;
+
+                .home-page__download-buttons {
+                    align-items: start;
+
+                    .download-button {
+                        max-width: 250px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &--bottom {
+                padding: 40px;
+            }
+
+            &--text {
+                @include flex($align: start, $gap: 30px);
+                
+                margin-right: 0;
+
+                h3 {
+                    @include title-font($size: 26px, $weight: 500, $color: $blue-secondary);
+                    line-height: 32px;
+                }
+
+                p {
+                    @include body-font($size: 16px, $color: $gray-light); 
+                }
+            }
+
+            &--screen {
+                @include flex();
+                top: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+
+        &__faq {
+            gap: 50px;
+            padding: 0 40px;
+            margin: 55px 0 60px;
+        }
     }
 }
 
@@ -364,9 +585,12 @@
         }
 
         &__ally {
+            margin: 50px 0;
+
             &--content {
                 gap: 60px;
                 padding: 40px;
+                border-radius: 30px;
             }
 
             &--right {
@@ -375,6 +599,53 @@
                     line-height: 40px;
 
                 }
+            }
+        }
+
+        &__acceptance {
+            padding: 30px 40px 40px;
+        }
+
+        &__review {
+            margin: 40px 0;
+
+            &--content {
+                @include flex($gap: 60px);
+                padding: 40px;
+                border-radius: 30px;
+            }
+
+            &--image {
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            &--text {
+                h2 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        &__download {
+            padding: 250px 40px 40px;
+            margin-top: 40px;
+        }
+
+        &__faq {
+            margin: 40px 0 60px;
+
+            h2 {
+                font-size: 40px;
+                line-height: 50px;
             }
         }
     }
@@ -404,7 +675,7 @@
             padding: 0 30px;
 
             &--content {
-                padding: 265px 30px 40px;
+                padding: 265px 20px 40px;
                 border-radius: 30px;
                 min-height: 450px;
             }
@@ -459,9 +730,11 @@
 
         &__ally {
             padding: 0 30px;
+            margin: 40px 0;
 
             &--content {
                 gap: 40px;
+                padding: 30px 20px;
             }
 
             &--video {
@@ -490,6 +763,87 @@
                     font-size: 22px;
                     line-height: 28px;
                 }
+            }
+        }
+
+        &__acceptance {
+            gap: 40px;
+            padding: 30px 30px 35px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        &__review {
+            margin: 35px 0;
+
+            &--content {
+                gap: 40px;
+                padding: 30px;
+            }
+
+            &--image {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            &--text {
+                h2 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        &__download {
+            padding: 150px 30px 35px;
+            margin-top: 45px;
+
+            &--top {
+                padding: 400px 30px 30px;
+                gap: 25px;
+            }
+
+            &--bottom {
+                padding: 30px;
+                gap: 25px;
+            }
+
+            &--text {
+                gap: 20px;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 16px; 
+                }
+            }
+
+            &--screen {
+                top: 0px;
+
+                img {
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+
+        &__faq {
+            gap: 40px;
+            padding: 0 30px;
+            margin: 30px 0 50px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
             }
         }
     }

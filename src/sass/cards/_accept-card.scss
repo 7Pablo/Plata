@@ -2,7 +2,41 @@
     position: relative;
     height: 100%;
     min-height: 400px;
-    width: 350px;
+    width: 450px;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); 
+
+    &__image {
+        position: relative;
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__text {
+        @include flex($align: start, $gap: 20px);
+        padding: 30px;
+
+        h3 {
+            @include title-font($size: 26px, $weight: 500, $color: $blue-secondary);
+            line-height: 32px;
+        }
+
+        p {
+            @include body-font($size: 16px, $color: $gray-light); 
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .accept-card {
+        width: 100%;
+
+        &__text {
+            gap: 15px;
+            padding: 20px;
+        }
+    }
 }

@@ -53,7 +53,8 @@
     "ally_body2": "Forget paper: keep all your tickets and receipts in one place, always accessible.",
     "ally_title3": "Connect Your Student or Work ID",
     "ally_body3": "Easily link your credentials and always have them at hand to access, identify, or verify.",
-    "accepted_title": "PLATA is accepted at:",
+    "accepted_title_top1": "PLATA",
+    "accepted_title_top2": "is accepted at:",
     "accepted_title1": "Large Companies",
     "accepted_body1": "Plata has national agreements that allow it to be used as a payment method across a wide network of companies. Join the community and enjoy all the benefits.",
     "accepted_title2": "Entrepreneurs and Businesses",
@@ -64,8 +65,8 @@
     "download_body": "Tell us about your experience with the app. Your feedback helps us improve and continue building a platform tailored to you.",
     "contact_title": "Got Questions or Need Help?",
     "contact_body": "Visit our contact page and we'll gladly answer your questions.",
-    "faq_title": "Frequently Asked Questions",
-    "faq_body": "Have questions about how Plata works? Here are the most common questions to help you get the most out of our app.",
+    "faq_title1": "Frequently Asked",
+    "faq_title2": "Questions",
     "questions": {
       "question1": "What is Plata?",
       "answer1": "Plata is a digital wallet that allows you to make payments, store documents, manage credentials, and much more — all from your phone.",
@@ -85,7 +86,8 @@
   },
 
   "about": {
-    "title": "About Us",
+    "title1": "About",
+    "title2": "Us",
     "body": "At Plata, we believe in a future where technology simplifies people's financial lives. We are a company focused on developing secure, accessible, and efficient digital solutions. Our main tool is the Plata app, a digital wallet that lets you make payments, store important documents, and manage credentials from your phone. We created Plata with the goal of offering a modern, practical, and reliable experience designed to support you daily, wherever you are.",
     "mission_title": "Mission",
     "mission_body": "To simplify people's financial lives through simple, secure, and accessible digital solutions focused on innovation and user experience.",

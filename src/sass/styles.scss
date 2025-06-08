@@ -58,6 +58,7 @@ a:focus {
 // Components
 @import './components/navbar';
 @import './components/footer';
+@import './components/faq-accordion';
 
 // Buttons
 @import './buttons/button';
@@ -72,6 +73,7 @@ a:focus {
 
 // Pages 
 @import './pages/home-page';
+@import './pages/about-page';
 
 body {
 	background-color: $background-main; 

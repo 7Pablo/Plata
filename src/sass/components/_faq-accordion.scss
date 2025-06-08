@@ -1,0 +1,50 @@
+.faq-accordion {
+    @include body-font($size: 16px, $color: $gray-light); 
+    width: 100%;
+
+    h3 {
+        @include title-font($size: 18px, $weight: 500, $color: $blue-primary);
+        line-height: 28px;
+    }
+
+    p {
+        @include body-font($size: 16px, $color: $gray-light); 
+        text-align: start;
+    }
+
+    .chakra-accordion__root {
+        @include flex($gap: 20px);
+
+        .chakra-accordion__item {
+            @include flex($align: start);
+            background-color: #fff;
+            border-radius: 10px;
+            width: 100%;
+            padding: 15px 20px;
+            box-shadow: 0px 6px 4px rgba($blue-primary, 0.3); 
+            border: none;
+
+            .chakra-accordion__itemTrigger{
+                @include flex($direction: row, $justify: space-between);
+
+                svg {
+                    color: $blue-primary;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .faq-accordion {
+        .chakra-accordion__root {
+            gap: 25px;
+
+            .chakra-accordion__item {
+                padding: 12px 18px;
+            }
+        }
+    }
+}

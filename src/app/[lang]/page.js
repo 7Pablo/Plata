@@ -6,6 +6,8 @@ import DonwloadButton from "@/components/buttons/DonwloadButton";
 import ServiceCard from "@/components/cards/serviceCard";
 import StepCard from "@/components/cards/StepCard";
 import AcceptCard from "@/components/cards/AcceptCard";
+import Button from "@/components/buttons/Button";
+import FaqAccordion from "@/components/FaqAccordion";
 
 // HomePage
 export default async function HomePage({params}) {
@@ -176,7 +178,7 @@ export default async function HomePage({params}) {
 
             {/* Acceptance */}
             <div className="home-page__acceptance">
-              <h2>{trans.home_page.accepted_title}</h2>
+              <h2><span>{trans.home_page.accepted_title_top1}</span> {trans.home_page.accepted_title_top2}</h2>
               <div className="home-page__acceptance--cards">
                 <AcceptCard
                   image="/images/company.webp" 
@@ -192,10 +194,72 @@ export default async function HomePage({params}) {
             </div>
 
             {/* Review */}
+            <div className="home-page__review">
+              <div className="home-page__review--content">
+                <div className="home-page__review--image">
+                  <Image
+                    src="/images/review.svg"
+                    alt="Review icon"
+                    height={300}
+                    width={300}
+                  />
+                </div>
+                <div className="home-page__review--right">
+                  <div className="home-page__review--text">
+                    <h2>{trans.home_page.review_title}</h2>
+                    <p>{trans.home_page.review_body}</p>
+                  </div>
+                  <Button>{trans.button.review}</Button>
+                </div>
+              </div>
+            </div>
 
             {/* Download */}
+            <div className="home-page__download">
+              <div className="home-page__download--screen">
+                <Image
+                  src="/images/screen2.webp"
+                  alt="Plata screen 1"
+                  width={400}
+                  height={400}
+                />
+              </div>
+              <div className="home-page__download--top">
+                <div className="home-page__download--text">
+                  <h3>{trans.home_page.download_title}</h3>
+                  <p>{trans.home_page.download_body}</p>
+                </div>
+                <div className="home-page__download-buttons">
+                  <DonwloadButton
+                    img="/icons/apple.svg"
+                    topText={trans.button.app_store}
+                    bottomText="App Store"
+                  />
+                  <DonwloadButton
+                    img="/icons/google.svg"
+                    topText={trans.button.google_play}
+                    bottomText="Google Play"
+                  />
+                </div>
+              </div>
+              <div className="home-page__download--bottom">
+                <div className="home-page__download--text">
+                  <h3>{trans.home_page.contact_title}</h3>
+                  <p>{trans.home_page.contact_body}</p>
+                </div>
+                <Button>{trans.button.contact}</Button>
+              </div>
+            </div>
 
             {/* Faq */}
+            <div className="home-page__faq">
+              <h2>{trans.home_page.faq_title1} <span>{trans.home_page.faq_title2}</span></h2>
+              <div className="home-page__faq--items">
+                <FaqAccordion
+                  questions={trans.home_page.questions}
+                />
+              </div>
+            </div>
         </div>
     );
 }
