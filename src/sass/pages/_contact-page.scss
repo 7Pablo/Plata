@@ -1,0 +1,152 @@
+.contact-page {
+    @include flex();
+
+    &__hero {
+        position: relative;
+        width: 100%;
+        height: 560px;
+    }
+
+    &__overlay {
+        @include flex();
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+
+    &__text {
+        @include flex($align: start, $gap: 20px);
+        width: 100%;
+        max-width: 1300px;
+        padding-bottom: 150px;
+        padding-left: 50px;
+
+        h1 {
+            @include title-font($size: 80px, $weight: 500, $color: #fff);
+            text-shadow: 0px 6px 5px rgba(0, 0, 0, 0.7);
+            width: 100%;
+            max-width: 600px;
+            text-align: start;
+        }
+
+        p {
+            @include body-font($size: 20px, $color: #fff);
+            line-height: 30px;
+            max-width: 700px;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+        height: 1000px; 
+    }
+
+    &__cards {
+        @include grid($columns: 1fr 1fr, $rows: auto, $gap: 80px);
+        width: 100%;
+        justify-items: center;
+        max-width: fit-content;
+        padding: 65px 50px;
+        position: relative;
+        top: -225px;
+        left: 50%;
+        z-index: 2;
+        transform: translateX(-50%);
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .contact-page {
+        &__overlay {
+            padding: 40px;
+        }
+
+        &__text {
+            h1 {
+                font-size: 70px;
+                line-height: 70px;
+                max-width: 500px;
+            }
+        }
+
+        &__wrapper {
+            height: 950px; 
+        }
+
+        &__cards {
+            gap: 40px;
+            padding: 55px 40px;
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .contact-page {
+        &__text {
+            padding-left: 0;
+
+            p {
+                font-size: 18px;
+                max-width: 100%;
+            }
+        }
+
+        &__wrapper {
+            height: 2050px; 
+        }
+
+        &__cards {
+            grid-template-columns: 1fr;
+            row-gap: 60px;
+            padding: 40px;
+            top: -225px;
+            left: 50%;
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .contact-page {
+        &__hero {
+            height: 400px;
+        }
+
+        &__overlay {
+            padding: 30px;
+        }
+
+        &__text {
+            padding-bottom: 100px;
+
+            h1 {
+                font-size: 44px;
+                line-height: 44px;
+                max-width: 100%;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &__wrapper {
+            height: 1425px; 
+        }
+
+        &__cards {
+            row-gap: 40px;
+            padding: 35px 30px;
+            top: -150px;
+        }
+    }
+}

@@ -93,15 +93,16 @@
     "mission_body": "To simplify people's financial lives through simple, secure, and accessible digital solutions focused on innovation and user experience.",
     "vision_title": "Vision",
     "vision_body": "To be the leading digital wallet in Latin America, driving the digital transformation of payments and personal document management.",
-    "vision": {
-      "vision_text": "Values",
-      "vision1": "Innovation: We constantly seek to improve and offer modern solutions.",
-      "vision2": "Security: We protect our users' information and transactions.",
-      "vision3": "Accessibility: We create tools that are easy to use and available to everyone.",
-      "vision4": "Trust: We build long-term relationships with our users through transparency and great service."
+    "values": {
+      "values_title": "Values",
+      "values1": "Innovation: We constantly seek to improve and offer modern solutions.",
+      "values2": "Security: We protect our users' information and transactions.",
+      "values3": "Accessibility: We create tools that are easy to use and available to everyone.",
+      "values4": "Trust: We build long-term relationships with our users through transparency and great service."
     },
-    "members_title": "Meet Our Team",
-    "memebrs_body": "Behind Plata is a team committed to innovation, technology, and service. We work together to create a secure, practical digital experience designed for you.",
+    "members_title1": "Meet Our",
+    "members_title2": "Team",
+    "members_body": "Behind Plata is a team committed to innovation, technology, and service. We work together to create a secure, practical digital experience designed for you.",
     "roles": {
       "role1": "President",
       "role2": "Chief Executive Officer (CEO)",

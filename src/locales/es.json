@@ -93,15 +93,16 @@
         "mission_body": "Facilitar la vida financiera de las personas mediante soluciones digitales simples, seguras y accesibles, centradas en la innovación y la experiencia del usuario.",
         "vision_title": "Visión",
         "vision_body": "Ser la billetera digital líder en América Latina, impulsando la transformación digital del manejo de pagos y documentos personales.",
-        "vision": {
-            "vision_text": "Valores",
-            "vision1": "Innovación: Buscamos constantemente mejorar y ofrecer soluciones modernas.",
-            "vision2": "Seguridad: Protegemos la información y transacciones de nuestros usuarios.",
-            "vision3": "Accesibilidad: Creamos herramientas al alcance de todos, sin complicaciones.",
-            "vision4": "Confianza: Construimos relaciones duraderas con nuestros usuarios a través de la transparencia y el buen servicio."
+        "values": {
+            "values_title": "Valores",
+            "values1": "Innovación: Buscamos constantemente mejorar y ofrecer soluciones modernas.",
+            "values2": "Seguridad: Protegemos la información y transacciones de nuestros usuarios.",
+            "values3": "Accesibilidad: Creamos herramientas al alcance de todos, sin complicaciones.",
+            "values4": "Confianza: Construimos relaciones duraderas con nuestros usuarios a través de la transparencia y el buen servicio."
         },
-        "members_title": "Conoce nuestro equipo",
-        "memebrs_body": "Detrás de Plata hay un equipo comprometido con la innovación, la tecnología y el servicio. Juntos trabajamos para crear una experiencia digital segura, práctica y pensada para ti.",
+        "members_title1": "Conoce nuestro",
+        "members_title2": "equipo",
+        "members_body": "Detrás de Plata hay un equipo comprometido con la innovación, la tecnología y el servicio. Juntos trabajamos para crear una experiencia digital segura, práctica y pensada para ti.",
         "roles": {
             "role1": "Presidente",
             "role2": "Directora Ejecutiva (CEO)",

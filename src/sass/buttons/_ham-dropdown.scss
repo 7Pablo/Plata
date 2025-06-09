@@ -4,6 +4,11 @@
     &__button {
         width: 40px;
         height: 40px;
+        transition: transform 0.3s ease;
+
+        &.is-open {
+            transform: rotate(180deg);
+        }
 
         &:focus {
             outline: none;

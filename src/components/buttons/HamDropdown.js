@@ -2,6 +2,7 @@
 
 import { Menu } from "@chakra-ui/react";
 import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +10,8 @@ export default function HamDropdown({ navItems, trans }) {
   const router = useRouter();
   const pathname = usePathname();
   const lang = pathname.startsWith("/en") ? "en" : "es";
+
+  const [isOpen, setIsOpen] = useState(false);
 
   // Language button
   const toggleLang = lang === "en" ? "es" : "en";
@@ -20,9 +23,9 @@ export default function HamDropdown({ navItems, trans }) {
 
   return (
     <div className="ham-dropdown">
-      <Menu.Root>
+      <Menu.Root onOpenChange={(e) => setIsOpen(e.open)}>
         <Menu.Trigger asChild>
-          <button className="ham-dropdown__button">
+          <button className={`ham-dropdown__button ${isOpen ? "is-open" : ""}`}>
             <Image
               src="/icons/ham.svg"
               alt="Menu icon"

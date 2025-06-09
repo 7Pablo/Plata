@@ -70,10 +70,14 @@ a:focus {
 @import './cards/service-card';
 @import './cards/step-card';
 @import './cards/accept-card';
+@import './cards/philosophy-card';
+@import './cards/team-card';
+@import './cards/contact-card';
 
 // Pages 
 @import './pages/home-page';
 @import './pages/about-page';
+@import './pages/contact-page';
 
 body {
 	background-color: $background-main; 

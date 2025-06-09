@@ -7,16 +7,19 @@
         margin-bottom: 260px;
 
         &--overlay {
-			@include flex();
 			position: absolute;
-			padding: 50px;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
-			z-index: 2;
+			background-color: rgba(0, 0, 0, 0.25);
+			z-index: 1;
 		}
+
+        &--wrapper {
+            @include flex();
+            width: 100%;
+        }
 
         &--content {
             @include flex($direction: row, $gap: 40px);
@@ -29,6 +32,7 @@
             position: absolute;
             bottom: -200px;
             box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); 
+            z-index: 2;
         }
 
         &--about {
@@ -45,6 +49,222 @@
 
             p {
                 @include body-font($size: 16px, $color: $gray-light); 
+            }
+        }
+    }
+
+    // Philosophy
+    &__philosophy {
+        @include grid($columns: 1fr 1fr, $rows: auto auto, $gap: 80px);
+        width: 100%;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 65px 50px;
+
+        > *:nth-child(3) {
+            grid-column: span 2;
+        }
+    }
+
+    // Team
+    &__team {
+        @include flex($gap: 80px);
+        padding: 65px 50px 80px;
+        width: 100%;
+
+        &--text {
+            @include flex($gap: 30px);
+
+            h2 {
+                @include title-font($size: 50px, $weight: 500, $color: $blue-secondary);
+                text-align: center;
+                
+                span {
+                    color: $orange-primary;
+                }
+            }
+
+            p {
+                @include body-font($size: 20px, $color: $gray-light); 
+                text-align: center;
+                max-width: 1100px;
+            }
+        }
+        
+        &--cards {
+            @include grid($columns: 1fr 1fr 1fr, $gap: 100px);
+            row-gap: 0px;
+            justify-items: center;
+        }
+    }
+}
+
+// Responsive medium
+@include responsive(medium) {
+    .about-page {
+        &__intro {
+            margin-bottom: 505px;
+
+            &--content {
+                @include flex($gap: 40px);
+                max-width: 800px;
+                margin: 0 40px;
+                bottom: -450px;
+            }
+        }
+
+        &__philosophy {
+            padding: 55px 40px;
+        }
+
+        &__team {
+            gap: 60px;
+            padding: 55px 40px 60px;
+
+            &--text {
+                h2 {
+                    font-size: 50px;
+                }
+            }
+            
+            &--cards {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 50px;
+                column-gap: 50px;
+                
+                > *:nth-child(3) {
+                    grid-column: span 2;
+                }
+            }
+        }
+    }
+}
+
+// Responsive smedium
+@include responsive(smedium) {
+    .about-page {
+        &__intro {
+            margin-bottom: 565px;
+            height: 300px;
+
+            &--content {
+                padding: 30px;
+                bottom: -525px;
+            }
+
+            &--video {
+                iframe {
+                    width: 360px;
+                    height: 202px;
+                }
+            }
+
+            &--about {
+                gap: 15px;
+
+                h2 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+        }
+
+        &__philosophy {
+            grid-template-columns: 1fr;
+            padding: 40px;
+            max-width: 500px;
+
+            > *:nth-child(3) {
+                grid-column: span 1;
+            }
+        }
+
+        &__team {
+            padding: 40px 40px 60px;
+
+            &--text {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            
+            &--cards {
+                grid-template-columns: 1fr;
+                row-gap: 60px;
+                
+                > *:nth-child(3) {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .about-page {
+        &__intro {
+            margin-bottom: 0;
+            margin-top: 35px;
+            height: fit-content;
+
+            &--image {
+                position: relative;
+                height: 300px;
+                margin: 0 30px;
+
+                img {
+                    border-radius: 20px;
+                    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            &--overlay {
+                display: none;
+            }
+
+            &--content {
+                gap: 20px;
+                position: static;
+                padding: 25px;
+                margin: 35px 30px;
+            }
+
+            &--video {
+                order: 2;
+
+                iframe {
+                    width: 280px;
+                    height: 200px;
+                }
+            }
+
+            &--about {
+                h2 {
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        &__philosophy {
+            padding: 35px 30px;
+        }
+
+        &__team {
+            padding: 35px 30px 60px;
+            gap: 40px;
+
+            &--text {
+                h2 {
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
             }
         }
     }

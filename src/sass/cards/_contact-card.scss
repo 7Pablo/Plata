@@ -1,0 +1,62 @@
+.contact-card {
+    @include flex($gap: 10px);
+    background-color: #fff;
+    border-radius: 20px;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(0,0,0, 0.2);
+    text-align: center;
+
+    h3 {
+        @include title-font($size: 28px, $color: $blue-primary);
+    }
+
+    p {
+        @include body-font($size: 18px, $color: $gray-dark);
+    }
+}
+
+.social-button {
+    @include flex($gap: 10px);
+    background-color: #fff;
+    border-radius: 20px;
+    height: 225px;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 8px 8px rgba(0,0,0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h3 {
+        @include title-font($size: 28px, $color: $blue-primary);
+    }
+
+    &:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+// Responsive small
+@include responsive(small) {
+    .contact-card {
+        height: 225px;
+        width: 300px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .social-button {
+        height: 175px;
+        width: 300px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
