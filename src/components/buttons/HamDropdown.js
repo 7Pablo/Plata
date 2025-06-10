@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default function HamDropdown({ navItems, trans }) {
   const router = useRouter();
@@ -27,7 +28,7 @@ export default function HamDropdown({ navItems, trans }) {
         <Menu.Trigger asChild>
           <button className={`ham-dropdown__button ${isOpen ? "is-open" : ""}`}>
             <Image
-              src="/icons/ham.svg"
+              src={getAssetPath("/icons/ham.svg")}
               alt="Menu icon"
               height={300}
               width={300}

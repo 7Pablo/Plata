@@ -107,7 +107,8 @@
       "role1": "President",
       "role2": "Chief Executive Officer (CEO)",
       "role3": "Chief Marketing Officer (CMO)"
-    }
+    },
+    "h1": "Sobre Plata"
   },
 
   "contact": {
@@ -127,5 +128,20 @@
     "google_play": "Get it on",
     "review": "Go to the survey",
     "contact": "Contact Us"
+  },
+
+  "metadata": {
+    "home": {
+      "title": "Plata | Your all-in-one digital wallet",
+      "description": "Manage your payments, tickets, insurance, and personal documents from your phone. Fast, secure, and hassle-free. Everything in one place, always within reach."
+    },
+    "about": {
+      "title": "About Plata | We simplify your financial life",
+      "description": "At Plata, we believe in a simpler, safer future. Learn about our mission to build accessible and efficient digital solutions for your everyday life."
+    },
+    "contact": {
+      "title": "Contact | Get in touch with Plata",
+      "description": "Have questions, suggestions, or want to learn more about Plata? Reach out to us and see how we can help."
+    }
   }
 }

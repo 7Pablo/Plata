@@ -26,6 +26,7 @@
 
             .chakra-accordion__itemTrigger{
                 @include flex($direction: row, $justify: space-between);
+                cursor: pointer;
 
                 svg {
                     color: $blue-primary;

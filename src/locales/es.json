@@ -107,7 +107,8 @@
             "role1": "Presidente",
             "role2": "Directora Ejecutiva (CEO)",
             "role3": "Director de Marketing (CMO)"
-        }
+        },
+        "h1": "About Plata"
     },
 
     "contact": {
@@ -127,5 +128,20 @@
         "google_play": "Descargalo en",
         "review": "Ir a la encuesta",
         "contact": "Contáctanos"
+    },
+
+    "metadata": {
+        "home": {
+            "title": "Plata | Tu billetera digital en un solo lugar",
+            "description": "Gestiona tus pagos, entradas, seguros y documentos desde el celular. Rápido, seguro y sin complicaciones. Todo en un solo lugar, siempre a tu alcance."
+        },
+        "about": {
+            "title": "Sobre Plata | Simplificamos tu vida financiera",
+            "description": "En Plata creemos en un futuro más simple y seguro. Conoce nuestra misión: crear soluciones digitales accesibles y eficientes para tu día a día."
+        },
+        "contact": {
+            "title": "Contacto | Hablemos sobre Plata",
+            "description": "¿Tienes dudas, sugerencias o quieres saber más sobre Plata? Ponte en contacto con nosotros y descubre cómo podemos ayudarte."
+        }
     }
 }

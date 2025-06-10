@@ -6,6 +6,7 @@ import Image from "next/image";
 import FooterContact from "./FooterContact";
 import FoldButton from "./buttons/FoldButton";
 import FooterItems from "./FooterItems";
+import { getAssetPath } from "@/utils/getAssetPath";
 
 export default async function Footer({lang}) {
 
@@ -31,7 +32,7 @@ export default async function Footer({lang}) {
                 <div className="footer__top">
                     <div className="footer__image">
                         <Image
-                            src="/images/plata-logo-white.png"
+                            src={getAssetPath("/images/plata-logo-white.png")}
                             alt="Logo Plata"
                             priority
                             width={200}
@@ -43,14 +44,14 @@ export default async function Footer({lang}) {
                         <h3>{trans.footer.contact}</h3>
                         <div className="footer__contact--items">
                             <FooterContact
-                                src="/icons/whatsapp.svg"
+                                src={getAssetPath("/icons/whatsapp.svg")}
                                 text='(+593) 983687629'
                                 medium='593983687629'
                                 type='whatsapp'
                                 trans={trans.footer}
                             />
                             <FooterContact
-                                src="/icons/email.svg"
+                                src={getAssetPath("/icons/email.svg")}
                                 text='contactos@plata.com'
                                 medium="contactos@plata.com"
                                 type="email"
@@ -87,13 +88,13 @@ export default async function Footer({lang}) {
                     <small className="footer__bottom--text">© {currentYear} {trans.footer.copyright}</small>
                     <div className="footer__social">
                         <FoldButton 
-                            src="/icons/insta.svg"
+                            src={getAssetPath("/icons/insta.svg")}
                             alt="Plata Instagram"
                             text="Instagram"
                             link=""
                         />
                         <FoldButton 
-                            src="/icons/x.svg"
+                            src={getAssetPath("/icons/x.svg")}
                             alt="Plata Twitter"
                             text="X - Twitter"
                             link=""

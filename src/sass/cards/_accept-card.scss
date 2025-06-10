@@ -17,9 +17,9 @@
     &__text {
         @include flex($align: start, $gap: 20px);
         padding: 30px;
-
+        
         h3 {
-            @include title-font($size: 26px, $weight: 500, $color: $blue-secondary);
+            @include title-font($size: 24px, $weight: 500, $color: $blue-secondary);
             line-height: 32px;
         }
 
