@@ -87,6 +87,12 @@
             width: 100%;
             justify-items: center;
             margin: 0 auto;
+
+            > div:nth-of-type(2) {
+                .service-card {
+                    height: 100%;
+                }
+            }
         }
     }
 
