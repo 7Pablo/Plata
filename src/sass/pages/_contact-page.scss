@@ -1,5 +1,6 @@
 .contact-page {
     @include flex();
+    overflow-x: hidden;
 
     &__hero {
         position: relative;

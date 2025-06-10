@@ -1,5 +1,6 @@
 .home-page {
     @include flex();
+    overflow-x: hidden;
 
     // Top
     &__top {
