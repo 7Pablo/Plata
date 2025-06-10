@@ -117,14 +117,14 @@ export default async function AboutPage({params}) {
                   <TeamCard
                     image={getAssetPath("/images/plata-member1.webp")}
                     name="Doménica Becerra"
-                    role={trans.about.roles.role1}
+                    role={trans.about.roles.role2}
                   />
                 </AnimatedSection>
                 <AnimatedSection animation="slideFromBottom">
                   <TeamCard
                     image={getAssetPath("/images/plata-member2.webp")}
                     name="Martín Bastidas"
-                    role={trans.about.roles.role2}
+                    role={trans.about.roles.role1}
                   />
                 </AnimatedSection>
                 <AnimatedSection animation="slideFromRight">
