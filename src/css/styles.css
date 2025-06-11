@@ -1508,7 +1508,7 @@ a:focus {
     align-items: start;
   }
   .home-page__download--top .home-page__download-buttons .download-button {
-    max-width: 250px;
+    min-width: 235px;
     width: 100%;
   }
   .home-page__download--bottom {

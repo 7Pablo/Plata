@@ -11,6 +11,14 @@ export default function FaqAccordion({ questions }) {
             answer: questions.answer1
         },
         {
+            question: questions.question8,
+            answer: questions.answer8
+        },
+        {
+            question: questions.question9,
+            answer: questions.answer9
+        },
+        {
             question: questions.question2,
             answer: questions.answer2
         },

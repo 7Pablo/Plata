@@ -7,6 +7,7 @@ export default function Button({
     type,
     route,
     children,
+    disabled = false,
 }) {
 
     // Routing
@@ -22,6 +23,7 @@ export default function Button({
         <button 
             className={`button ${type === "navbar" ? "button--navbar" : ""}`}
             onClick={handleRedirect}
+            disabled={disabled}
         >
             {children}
         </button>

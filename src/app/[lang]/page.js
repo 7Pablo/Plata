@@ -254,7 +254,9 @@ export default async function HomePage({params}) {
                       <h2>{trans.home_page.review_title}</h2>
                       <p>{trans.home_page.review_body}</p>
                     </div>
-                    <Button>{trans.button.review}</Button>
+                    <Button disabled={true}>
+                      {trans.button.review}
+                    </Button>
                   </div>
                 </div>
               </AnimatedSection>

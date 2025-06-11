@@ -29,6 +29,7 @@ export default async function Navbar({ lang }) {
                 />
                 <Button
                     type="navbar"
+                    disabled={true}
                 >
                     {trans.button.download}
                 </Button>
