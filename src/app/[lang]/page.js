@@ -72,7 +72,7 @@ export default async function HomePage({params}) {
                   <div className="home-page__meaning--content">
                     <div className="home-page__meaning--screen">
                       <Image
-                        src={getAssetPath("/images/screen1.webp")}
+                        src={lang == 'es' ? getAssetPath("/images/screen1.webp") : getAssetPath("/images/screen1-en.webp")}
                         alt="Plata screen 1"
                         width={1000}
                         height={1000}
@@ -80,7 +80,7 @@ export default async function HomePage({params}) {
                     </div>
                     <div className="home-page__meaning--screen-small">
                       <Image
-                        src={getAssetPath("/images/screen1-small.webp")}
+                        src={lang == 'es' ? getAssetPath("/images/screen1-small.webp") : getAssetPath("/images/screen1-small-en.webp") }
                         alt="Plata screen 1"
                         width={1000}
                         height={1000}
@@ -265,7 +265,7 @@ export default async function HomePage({params}) {
               <div className="home-page__download">
                 <div className="home-page__download--screen">
                   <Image
-                    src={getAssetPath("/images/screen2.webp")}
+                    src={lang == 'es' ? getAssetPath("/images/screen2.webp") : getAssetPath("/images/screen2-en.webp")}
                     alt="Plata screen 1"
                     width={400}
                     height={400}
