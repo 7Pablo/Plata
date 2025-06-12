@@ -19,7 +19,7 @@ export default function NavbarButton() {
         <div className="navbar-button">
             <div className="navbar__logo" onClick={handleRedirect}>
                 <Image
-                    src={getAssetPath("/images/plata-logo-main.png")}
+                    src={lang == 'es' ? getAssetPath("/images/plata-logo-main.png") : getAssetPath("/images/plata-logo-main-en.png")}
                     alt="Logo Plata"
                     priority
                     width={400}

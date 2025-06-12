@@ -32,7 +32,7 @@ export default async function Footer({lang}) {
                 <div className="footer__top">
                     <div className="footer__image">
                         <Image
-                            src={getAssetPath("/images/plata-logo-white.png")}
+                            src={lang == 'es' ? getAssetPath("/images/plata-logo-white.png") : getAssetPath("/images/plata-logo-white-en.png")}
                             alt="Logo Plata"
                             priority
                             width={200}

@@ -22,7 +22,7 @@ export default async function Navbar({ lang }) {
     return (
         <div className="navbar">
             <div className="navbar__content">
-                <NavbarButton />
+                <NavbarButton/>
                 <NavbarItems 
                     navItems={navItems} 
                     trans={trans.navbar}
