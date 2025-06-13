@@ -25,9 +25,9 @@ export const slideFromRight = {
 };
 
 export const slideFromBottom = {
-  initial: { y: 100 },
+  initial: { y: 50 },
   animate: { y: 0 },
-  exit: { y: 100 },
+  exit: { y: 50 },
 };
 
 export const rotateIn = {
